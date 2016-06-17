@@ -58,11 +58,14 @@ $(document).ready(function(){
     var name = $("input.user-name").val();
     var size = $("select.pizza-size").val();
     var toppings = [$("#extra-cheese:checked").val(),$("#pepperoni:checked").val(),$("#sausage:checked").val(),$("#ham:checked").val(),$("#bacon:checked").val(),$("#onions:checked").val(),$("#greenpeppers:checked").val(),$("#tomatoes:checked").val(),$("#pineapple:checked").val()]
-console.log(toppings)
-console.log(size)
-console.log(name)
     var newPizza = new Pizza (name, size, toppings);
-    console.log(newPizza.price());
+    newPizza.price();
+    $(".user-name").text(newPizza.name);
+    $(".pizza-size").text(newPizza.size);
+    $(".pizza-toppings").text(newPizza.toppings);
+
+
+    $(".order-total").text(newPizza.price());
 
   });
 });
