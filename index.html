@@ -12,6 +12,20 @@
       <div class="jumbotron">
         <h1>Pick your Pizza!</h1>
       </div>
+      <h3>Welcome to Brett's pizzeria! Our menu is as follows:</h3>
+      <p>Prices for each size:</p>
+      <ul>
+        <li>Small (6"): $6.00</li>
+        <li>Medium (9"): $8.00</li>
+        <li>Large (11"): $10.00</li>
+        <li>Extra-Large (12"): $11.00</li>
+      </ul>
+      <p>Toppings are extra, as follows:</p>
+      <ul>
+        <li>Extra Cheese: $0.75</li>
+        <li>Pepperoni, Sausage, Ham, Bacon, and Pineapple: $1.00</li>
+        <li>Onions, Green Peppers and Tomatoes: $0.50</li>
+      </ul>
       <form id="pizza-form">
         <label for="name">What is your name?</label>
         <input type="text" name="name" class="user-name" >
@@ -60,7 +74,7 @@
           <h3>Congratulations, <span class="user-name"></span>! You have ordered a <span class="pizza-size"></span> pizza with <span class="pizza-toppings"></span>. Is this correct?</h3>
           <button type="submit" id="correct-order">Yes</button>
           <button type="submit" id="wrong-order">No</button>
-          <p>Your total is: <span class="order-total"></span>.</p>
+          <p>Your total is: $<span class="order-total"></span>.</p>
         </form>
       </div>
     </div>

@@ -34,18 +34,18 @@ Pizza.prototype.price = function () {
     cost += 1;
   }
   if (this.toppings[5] === "onions") {
-    cost += .5;
+    cost += .50;
   }
   if (this.toppings[6] === "greenpeppers") {
-    cost += .5;
+    cost += .50;
   }
   if (this.toppings[7] === "tomatoes") {
-    cost += .5;
+    cost += .50;
   }
   if (this.toppings[8] === "pineapple") {
     cost += 1;
   }
-  return cost;
+  return cost.toFixed(2);
 };
 
 
@@ -54,7 +54,7 @@ Pizza.prototype.price = function () {
 $(document).ready(function(){
   $("#pizza-form").submit(function(event){
     event.preventDefault();
-
+    debugger;
     var name = $("input.user-name").val();
     var size = $("select.pizza-size").val();
     var toppings = [$("#extra-cheese:checked").val(),$("#pepperoni:checked").val(),$("#sausage:checked").val(),$("#ham:checked").val(),$("#bacon:checked").val(),$("#onions:checked").val(),$("#greenpeppers:checked").val(),$("#tomatoes:checked").val(),$("#pineapple:checked").val()]
@@ -63,10 +63,13 @@ $(document).ready(function(){
     $(".confirmation").show()
 ;    $(".user-name").text(newPizza.name);
     $(".pizza-size").text(newPizza.size);
+    newPizza.toppings.forEach(function(toppings){
+      $(".pizza-toppings").append(newPizza.toppings +", ");
+
     $(".pizza-toppings").text(newPizza.toppings);
 
 
     $(".order-total").text(newPizza.price());
-
+    });
   });
 });
