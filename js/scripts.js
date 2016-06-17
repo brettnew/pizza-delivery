@@ -61,21 +61,25 @@ $(document).ready(function(){
     var newPizza = new Pizza (name, size, toppings);
     var selectedToppings = $("input:checked").map(function(){
       return $(this).val();
-    });
+    }).toArray();
 
-    console.log(selectedToppings);
     newPizza.price();
-    $(".confirmation").show()
-;    $(".user-name").text(newPizza.name);
+    $(".confirmation").show();
+    $(".user-name").text(newPizza.name);
     $(".pizza-size").text(newPizza.size);
     $(".selected-toppings").text(selectedToppings.length);
-    selectedToppings.forEach(function(toppings){
-      $(".pizza-toppings").append(toppings +", ");
+    selectedToppings.forEach(function(topping){
+      $(".pizza-toppings").append(" " + topping);
     });
-    // $(".pizza-toppings").text(newPizza.toppings);
 
-
+    $("#correct-order").click(function(event){
+      event.preventDefault();
+    $(".total-amount").show();
     $(".order-total").text(newPizza.price());
+    });
 
+    $("wrong-order").click(function(){
+      location.reload();
+    });
   });
 });

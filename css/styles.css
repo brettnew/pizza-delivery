@@ -1,3 +1,7 @@
 .confirmation {
   display: none;
 }
+
+.total-amount {
+  display: none;
+}
