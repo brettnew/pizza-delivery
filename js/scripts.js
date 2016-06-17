@@ -49,7 +49,6 @@ Pizza.prototype.price = function () {
 };
 
 
-
 // Front-end Logic
 $(document).ready(function(){
   $("#pizza-form").submit(function(event){
