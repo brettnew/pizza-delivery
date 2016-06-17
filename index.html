@@ -56,26 +56,14 @@
           <button type="submit" id="final-order">Order your Pizza!</button>
         </div>
       </form>
-
-      <!-- <form class="toppings-checkboxes" action="demo-form.asp" method="get">
-        <input type="checkbox" name="toppings" value="Extra-Cheese"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="submit" name="name" value="Pick your Toppings">
-      </form> -->
-      <!-- <form id="toppings-form">
-        <div class="form-group">
-          <label for="toppings1">What would you like your first topping to be?</label>
-          <select class="toppings1">
-            <option value="blank"></option>
-            <option value="Pepperoni">Pepperoni</option>
-          </select>
-        </div> -->
-      <!-- </form> -->
+      <div class="confirmation">
+        <form id="order-confirmation">
+          <h3>Congratulations, <span class="user-name"></span>! You have ordered a <span class="pizza-size"></span> with <span   toppings></span>. Is this correct?</h3>
+          <button type="submit" id="correct-order">Yes</button>
+          <button type="submit" id="wrong-order">No</button>
+          <p>Your total is: <span class="order-total"></span>.</p>
+        </form>
+      </div>
     </div>
   </body>
 </html>
