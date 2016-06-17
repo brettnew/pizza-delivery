@@ -43,10 +43,13 @@ Pizza.prototype.price = function () {
 $(document).ready(function(){
   $("#pizza-form").submit(function(event){
     event.preventDefault();
-    var newPizza = new Pizza (toppings);
 
-var toppings = [$("#extra-cheese:checked").val(),$("#pepperoni:checked").val(),$("#sausage:checked").val(),$("#ham:checked").val(),$("#bacon:checked").val(),$("#onions:checked").val(),$("#greenpeppers:checked").val(),$("#tomatoes:checked").val(),$("#pineapple:checked").val()]
+    var newPizza = new Pizza (toppings);
+    var name = $("input.user-name").val();
+    var size = $("select.pizza-size").val();
+    var toppings = [$("#extra-cheese:checked").val(),$("#pepperoni:checked").val(),$("#sausage:checked").val(),$("#ham:checked").val(),$("#bacon:checked").val(),$("#onions:checked").val(),$("#greenpeppers:checked").val(),$("#tomatoes:checked").val(),$("#pineapple:checked").val()]
 console.log(toppings)
+    newPizza.price();
 
   });
 });
