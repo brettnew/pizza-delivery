@@ -12,11 +12,9 @@
       <div class="jumbotron">
         <h1>Pick your Pizza!</h1>
       </div>
-      <form id="user-name">
+      <form id="pizza-form">
         <label for="name">What is your name?</label>
-        <input type="text" name="name" class="user-name">
-      </form>
-      <form id="size-form">
+        <input type="text" name="name" class="user-name" >
         <div class="form-group">
           <label for="pizza-size">Which size pizza would you like?</label>
           <select class="pizza-size">
@@ -27,10 +25,7 @@
             <option value="Extra-Large">Extra-Large</option>
           </select>
         </div>
-        <button type="submit" name="button">Pick your size!</button>
-        <h4>You've ordered a <span class="final-pizza-size"></span>.</h4>
-        <div class="form-group">
-          <h6>Which toppings would you like?</h6>
+          <h5>Which toppings would you like?</h5>
           <div class="checkbox">
             <label><input type="checkbox" id="extra-cheese" value="extra-cheese">Extra-Cheese</label>
           </div>
@@ -58,9 +53,7 @@
           <div class="checkbox">
             <label><input type="checkbox" id="pineapple" value="pineapple">Pineapple</label>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" id="anchovies" value="anchovies">Anchovies</label>
-          </div>
+          <button type="submit" id="final-order">Order your Pizza!</button>
         </div>
       </form>
 
