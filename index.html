@@ -9,7 +9,45 @@
   </head>
   <body>
     <div class="container">
-
+      <div class="jumbotron">
+        <h1>Pick your Pizza!</h1>
+      </div>
+      <form id="user-name">
+        <label for="name">What is your name?</label>
+        <input type="text" name="name" class="user-name">
+      </form>
+      <form id="size-form">
+        <div class="form-group">
+          <label for="pizza-size">Which size pizza would you like?</label>
+          <select class="pizza-size">
+            <option value="blank"></option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+        </div>
+        <button type="submit" name="button">Pick your size!</button>
+        <h4>You've ordered a <span class="final-pizza-size"></span>.</h4>
+      </form>
+      <!-- <form class="toppings-checkboxes" action="demo-form.asp" method="get">
+        <input type="checkbox" name="toppings" value="Extra-Cheese"> Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+        <input type="submit" name="name" value="Pick your Toppings">
+      </form> -->
+      <!-- <form id="toppings-form">
+        <div class="form-group">
+          <label for="toppings1">What would you like your first topping to be?</label>
+          <select class="toppings1">
+            <option value="blank"></option>
+            <option value="Pepperoni">Pepperoni</option>
+          </select>
+        </div> -->
+      <!-- </form> -->
     </div>
   </body>
 </html>
