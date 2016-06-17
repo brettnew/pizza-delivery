@@ -10,12 +10,18 @@ This webpage allows the user to pick what size and what toppings they would like
 
 ##Specifications
 
-- User will be able to select size of small, medium, or large from  dropdown menu, and webpage will display size selected and base price after user clicks "submit your size"  button.
+- User will enter their name, which will then display  at the bottom of the page once they have completed their total order.
+  - Example Input: "Brett"
+  - Example Output: "Hello, Brett"
+- User will be able to select size of small, medium, or large from  dropdown menu, and webpage will use this info to determine cost of pizza.
   - Example Input: Click on "large", then click button
-  - Example Output: "You have selected large, which begins at $10.00"
-- User will then be able to answer series of yes or no questions about which toppings they would like, and after clicking "find your price" button, total price and details of order will be displayed.
+  - Example Output: "You have selected large".
+- User will then select topping by checkboxes; when complete, they will click "submit order button", and details of order will be displayed
   - Example Input: Select toppings, then click button.
-  - Example Output: " You order a ' ', your total will be ' '."
+  - Example Output: " You ordered a ' ' with 'toppings'."
+- After clicking "submit order" button, webpage will display details of order, then will ask user to confirm the details. If the user clicks yes, their total will be displayed. If they click no, the page will refresh and they will restart ordering process.
+  - Example Input: Click on yes, order is correct
+  - Example Output: "Your total is $ .  "
 
 ## Setup/Installation Requirements
 
