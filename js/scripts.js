@@ -60,7 +60,8 @@ $(document).ready(function(){
     var toppings = [$("#extra-cheese:checked").val(),$("#pepperoni:checked").val(),$("#sausage:checked").val(),$("#ham:checked").val(),$("#bacon:checked").val(),$("#onions:checked").val(),$("#greenpeppers:checked").val(),$("#tomatoes:checked").val(),$("#pineapple:checked").val()]
     var newPizza = new Pizza (name, size, toppings);
     newPizza.price();
-    $(".user-name").text(newPizza.name);
+    $(".confirmation").show()
+;    $(".user-name").text(newPizza.name);
     $(".pizza-size").text(newPizza.size);
     $(".pizza-toppings").text(newPizza.toppings);
 
