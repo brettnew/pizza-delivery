@@ -25,7 +25,7 @@ This webpage allows the user to pick what size and what toppings they would like
 
 ## Setup/Installation Requirements
 
-* Clone the github repository. The site can be found here on GitHub, or click here to view it on the web.
+* Clone the github repository. The site can be found here on GitHub, or click here: https://github.com/brettnew/pizza-delivery.
 * Open index.html in the browser of your choice.
 
 ## Known Bugs

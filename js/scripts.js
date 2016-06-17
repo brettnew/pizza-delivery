@@ -78,8 +78,12 @@ $(document).ready(function(){
     $(".order-total").text(newPizza.price());
     });
 
-    $("wrong-order").click(function(){
+    $("#wrong-order").click(function(){
       location.reload();
     });
+
+    $("#order-again").click(function(){
+      location.reload();
+    })
   });
 });

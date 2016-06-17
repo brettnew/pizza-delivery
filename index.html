@@ -12,20 +12,26 @@
       <div class="jumbotron">
         <h1>Pick your Pizza!</h1>
       </div>
-      <h3>Welcome to Brett's pizzeria! Our menu is as follows:</h3>
-      <p>Prices for each size:</p>
-      <ul>
-        <li>Small (6"): $6.00</li>
-        <li>Medium (9"): $8.00</li>
-        <li>Large (11"): $10.00</li>
-        <li>Extra-Large (12"): $11.00</li>
-      </ul>
-      <p>Toppings are extra, as follows:</p>
-      <ul>
-        <li>Extra Cheese: $0.75</li>
-        <li>Pepperoni, Sausage, Ham, Bacon, and Pineapple: $1.00</li>
-        <li>Onions, Green Peppers and Tomatoes: $0.50</li>
-      </ul>
+          <h3>Welcome to Brett's pizzeria! Our menu is as follows:</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Prices for each size:</h5>
+          <ul>
+            <li>Small (6"): $6.00</li>
+            <li>Medium (9"): $8.00</li>
+            <li>Large (11"): $10.00</li>
+            <li>Extra-Large (12"): $11.00</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Toppings are extra, as follows:</h5>
+          <ul>
+            <li>Extra Cheese: $0.75</li>
+            <li>Pepperoni, Sausage, Ham, Bacon, and Pineapple: $1.00</li>
+            <li>Onions, Green Peppers and Tomatoes: $0.50</li>
+          </ul>
+        </div>
+      </div>
       <form id="pizza-form">
         <label for="name">What is your name?</label>
         <input type="text" name="name" class="user-name" >
@@ -41,41 +47,51 @@
         </div>
           <h5>Which toppings would you like?</h5>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/extra-cheese.jpg" alt="Extra-Cheese" />
             <label><input type="checkbox" id="extra-cheese" value="Extra-Cheese">Extra-Cheese</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" id="pepperoni" src="img/pepperoni.jpeg" alt="Pepperoni" />
             <label><input type="checkbox" id="pepperoni" value="Pepperoni">Pepperoni</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/sausage.jpeg" alt="Sausage" />
             <label><input type="checkbox" id="sausage" value="Sausage">Sausage</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/ham.jpeg" alt="Ham" />
             <label><input type="checkbox" id="ham" value="Ham">Ham</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/bacon.jpeg" alt="Bacon" />
             <label><input type="checkbox" id="bacon" value="Bacon">Bacon</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/onion.jpeg" alt="Onions" />
             <label><input type="checkbox" id="onions" value="Onions">Onions</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/green-pepper.jpeg" alt="Green Peppers" />
             <label><input type="checkbox" id="greenpeppers" value="Green Peppers">Green Peppers</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/tomatoes.jpeg" alt="Tomatoes" />
             <label><input type="checkbox" id="tomatoes" value="Tomatoes">Tomatoes</label>
           </div>
           <div class="checkbox">
+            <img class="picture-toppings" src="img/pineapple.jpeg" alt="Pineapple" />
             <label><input type="checkbox" id="pineapple" value="Pineapple">Pineapple</label>
           </div>
-          <button type="submit" id="final-order">Order your Pizza!</button>
+          <button class="btn" type="submit" id="final-order">Order your Pizza!</button>
       </form>
       <div class="confirmation">
         <form id="order-confirmation">
           <h3>Congratulations, <span class="user-name"></span>! You have ordered a <span class="pizza-size"></span> pizza with <span class="selected-toppings"></span> total toppings of <span class="pizza-toppings"></span>. Is this correct?</h3>
-          <button type="submit" id="correct-order">Yes</button>
-          <button type="submit" id="wrong-order">No</button>
+          <button class="btn" type="submit" id="correct-order">Yes</button>
+          <button class="btn" type="submit" id="wrong-order">No</button>
           <div class="total-amount">
             <p>Your total is: $<span class="order-total"></span>.</p>
+            <button class="btn" type="submit" name="button" id="order-again">Order another pizza!</button>
           </div>
         </form>
       </div>

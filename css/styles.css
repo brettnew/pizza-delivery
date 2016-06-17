@@ -5,3 +5,20 @@
 .total-amount {
   display: none;
 }
+
+.btn {
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  background-color: #1a661a;
+  color: white;
+}
+.picture-toppings {
+  width:8%;
+  height: 8%;
+  margin: 2px;
+}
+
+.jumbotron {
+  text-align: center;
+}
